@@ -1,4 +1,6 @@
 ﻿namespace MonkeyFinderApp;
+using MonkeyFinderApp.Services;
+using MonkeyFinderApp.View;
 
 public static class MauiProgram
 {
@@ -12,7 +14,10 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+        builder.Services.AddTransient<MainPage>();
+        builder.Services.AddSingleton<MonkeyService>();
+        builder.Services.AddTransient<MonkeysViewModel>();
 
-		return builder.Build();
+        return builder.Build();
 	}
 }

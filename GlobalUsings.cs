@@ -1,7 +1,7 @@
 ﻿global using CommunityToolkit.Mvvm.ComponentModel;
 global using CommunityToolkit.Mvvm.Input;
-//global using MonkeyFinder.Model;
-//global using MonkeyFinder.ViewModel;
+global using MonkeyFinderApp.Model;
+global using MonkeyFinderApp.ViewModel;
 global using System.Collections.ObjectModel;
 global using System.ComponentModel;
 global using System.Diagnostics;
